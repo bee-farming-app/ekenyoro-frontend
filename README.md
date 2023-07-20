@@ -1,27 +1,61 @@
-# EkenyoroFrontend
+# Ekenyoro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+This web application, built for the organization Ekenyoro, serves as an information hub for apiculture (beekeeping) business. It aims to provide valuable resources and insights to current and prospective bee farmers, investors, and enthusiasts.
 
-## Development server
+## About Ekenyoro
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ekenyoro is a non-profit organization dedicated to economically empowering vulnerable communities through climate-smart agriculture. By promoting beekeeping as an alternative livelihood, Ekenyoro aims to address the challenges faced by smallholder farmers and foster sustainable agricultural practices.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### [Angular](https://angular.io)
 
-## Build
+A powerful and scalable JavaScript framework for building web applications.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### [Bootstrap 5](https://getbootstrap.com)
 
-## Running unit tests
+A popular CSS framework for designing responsive and mobile-first websites.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### [GitHub Pages](https://pages.github.com)
 
-## Running end-to-end tests
+Hosting platform for deploying and showcasing this web application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Supporting Technologies
 
-## Further help
+- [Yarn](https://yarnpkg.com) (package manager)
+- [SCSS](https://sass-lang.com) (CSS preprocessor)
+- [angular-cli-ghpages](https://www.npmjs.com/package/angular-cli-ghpages) (deployment tool)
+- [TypeScript](https://www.typescriptlang.org) (programming language)
+- [HTML](https://html.com) (markup language)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Getting Started
+
+Access the online web app, [Ekenyoro](https://bee-farming-app.github.io/ekenyoro-frontend/) on this link `https://bee-farming-app.github.io/ekenyoro-frontend/`.
+
+To run `Ekenyoro` web app locally, follow these steps:
+
+1. Clone the repository:
+
+    ```console
+    https://github.com/bee-farming-app/ekenyoro-frontend.git
+    ```
+
+2. Install dependencies:
+
+    ```console
+    yarn install
+    ```
+
+3. Start the development server:
+
+    ```console
+    yarn start
+    ```
+
+4. Open the web app in your browser: `http://localhost:4200`
+
+Feel free to explore the codebase. We appreciate your interest and support in promoting sustainable agriculture and empowering bee farmers!
+
+## License
+
+This project is licensed under the [GPL-3.0 license](LICENSE).
