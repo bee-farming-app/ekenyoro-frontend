@@ -30,14 +30,14 @@ Hosting platform for deploying and showcasing this web application.
 
 ## Getting Started
 
-Access the online web app, [Ekenyoro](https://bee-farming-app.github.io/ekenyoro-frontend/) on this link `https://bee-farming-app.github.io/ekenyoro-frontend/`.
+Access the online web app, [Ekenyoro](https://bee-farming-app.github.io/ekenyoro-frontend/) on this link [https://bee-farming-app.github.io/ekenyoro-frontend](https://bee-farming-app.github.io/ekenyoro-frontend/).
 
 To run `Ekenyoro` web app locally, follow these steps:
 
 1. Clone the repository:
 
     ```console
-    https://github.com/bee-farming-app/ekenyoro-frontend.git
+    git clone https://github.com/bee-farming-app/ekenyoro-frontend.git
     ```
 
 2. Install dependencies:
@@ -52,7 +52,7 @@ To run `Ekenyoro` web app locally, follow these steps:
     yarn start
     ```
 
-4. Open the web app in your browser: `http://localhost:4200`
+4. Open the web app in your browser: [http://localhost:4200](http://localhost:4200)
 
 Feel free to explore the codebase. We appreciate your interest and support in promoting sustainable agriculture and empowering bee farmers!
 
