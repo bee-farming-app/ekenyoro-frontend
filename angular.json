@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "ekenyoro",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -55,14 +55,7 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": {
-                "scripts": true,
-                "styles": {
-                  "minify": true,
-                  "inlineCritical": false
-                },
-                "fonts": true
-              },
+              "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
@@ -107,6 +100,7 @@
     }
   },
   "cli": {
-    "analytics": "99a36820-2047-49cc-be2e-10caef947903"
+    "analytics": "99a36820-2047-49cc-be2e-10caef947903",
+    "packageManager": "yarn"
   }
 }
