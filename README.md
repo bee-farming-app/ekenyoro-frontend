@@ -27,6 +27,7 @@ Hosting platform for deploying and showcasing this web application.
 - [angular-cli-ghpages](https://www.npmjs.com/package/angular-cli-ghpages) (deployment tool)
 - [TypeScript](https://www.typescriptlang.org) (programming language)
 - [HTML](https://html.com) (markup language)
+- [Bootstrap Icons](https://icons.getbootstrap.com) (icon library)
 
 ## Getting Started
 
