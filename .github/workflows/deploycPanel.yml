@@ -1,19 +1,19 @@
-name: Publish website to cPanel
-on:
-  push:
-    branches:
-      - gh-pages
+name: Deploy to cPanel
+
+on: page_build
+
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
-      - name: FTP-Deploy-Action
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          ftp-server: ${{ secrets.FTP_DEV_SERVER }}
-          ftp-username: ${{ secrets.FTP_DEV_USERNAME }}
-          ftp-password: ${{ secrets.FTP_DEV_PASSWORD }}
+          server: ${{ secrets.FTP_DEV_SERVER }}
+          username: ${{ secrets.FTP_DEV_USERNAME }}
+          password: ${{ secrets.FTP_DEV_PASSWORD }}
+          local-dir: docs/ekenyoro-frontend/
+          server-dir: public_html/
