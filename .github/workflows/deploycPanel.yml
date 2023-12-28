@@ -1,6 +1,12 @@
 name: Deploy to cPanel
 
-on: page_build
+on:
+  push:
+    paths:
+      - "docs/**"
+  pull_request:
+    paths:
+      - "docs/**"
 
 jobs:
   deploy:
