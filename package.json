@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:docs": "ng build --base-href=/frontend_dev/ --output-path=docs",
+    "build:docs": "ng build --base-href=./ --output-path=docs",
     "deploy:gh": "ng deploy --base-href=/ekenyoro-frontend/",
     "build-and-deploy": "yarn build:docs && yarn deploy:gh --message=\"$npm_config_message\"",
     "watch": "ng build --watch --configuration development",

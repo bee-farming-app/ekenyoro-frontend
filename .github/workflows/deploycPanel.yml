@@ -18,8 +18,8 @@ jobs:
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.FTP_DEV_SERVER }}
-          username: ${{ secrets.FTP_DEV_USERNAME }}
-          password: ${{ secrets.FTP_DEV_PASSWORD }}
+          server: ${{ secrets.FTP_PUB_SERVER }}
+          username: ${{ secrets.FTP_PUB_USERNAME }}
+          password: ${{ secrets.FTP_PUB_PASSWORD }}
           local-dir: docs/
           server-dir: /
