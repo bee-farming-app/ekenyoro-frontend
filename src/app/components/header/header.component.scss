@@ -64,6 +64,17 @@
   }
 }
 
+// Adding new styles for collapse indicator:
+.nav-link[data-bs-toggle="collapse"] {
+  .collapse-indicator {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &[aria-expanded="true"] .collapse-indicator {
+    transform: rotate(180deg);
+  }
+}
+
 .close-btn {
   background: #f0f8ff3f;
   border: hidden;

@@ -58,12 +58,11 @@
 
       <!-- Programs -->
       <li class="nav-item">
-        <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePrograms" aria-expanded="false"
-          aria-controls="collapsePrograms" (click)="programExpanded = !programExpanded">
+        <a class="nav-link" href="#collapsePrograms" data-bs-toggle="collapse" data-bs-target="#collapsePrograms" aria-expanded="false"
+          aria-controls="collapsePrograms">
           <i class="bi bi-box"></i>
           <span class="px-1">Programs</span>
-          <i *ngIf="!programExpanded" class="bi bi-chevron-down"></i>
-          <i *ngIf="programExpanded" class="bi bi-chevron-up"></i>
+          <i class="bi bi-chevron-down collapse-indicator"></i>
         </a>
         <div class="collapse" id="collapsePrograms">
           <ul class="nav flex-column ms-3">
@@ -97,22 +96,20 @@
       <!-- Resources -->
       <li class="nav-item">
         <a class="nav-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapseResources"
-          aria-expanded="false" aria-controls="collapseResources" (click)="resourcesExpanded = !resourcesExpanded">
+          aria-expanded="false" aria-controls="collapseResources">
           <i class="bi bi-book"></i>
           <span class="px-1">Resources</span>
-          <i *ngIf="!resourcesExpanded" class="bi bi-chevron-down"></i>
-          <i *ngIf="resourcesExpanded" class="bi bi-chevron-up"></i>
+          <i class="bi bi-chevron-down collapse-indicator"></i>
         </a>
         <div class="collapse" id="collapseResources">
           <ul class="nav flex-column ms-3">
             <!-- Library -->
             <li class="nav-item">
               <a class="nav-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapseLibrary"
-                aria-expanded="false" aria-controls="collapseLibrary" (click)="libraryExpanded = !libraryExpanded">
+                aria-expanded="false" aria-controls="collapseLibrary">
                 <i class="bi bi-journal-bookmark"></i>
                 <span class="px-1">Library</span>
-                <i *ngIf="!libraryExpanded" class="bi bi-chevron-down"></i>
-                <i *ngIf="libraryExpanded" class="bi bi-chevron-up"></i>
+                <i class="bi bi-chevron-down collapse-indicator"></i>
               </a>
               <div class="collapse" id="collapseLibrary">
                 <ul class="nav flex-column ms-3">
@@ -177,7 +174,7 @@
       <!-- Copyright -->
       <li class="nav-item">
         <p class="copyright px-3 pt-2 pb-3 mb-0 text-muted text-white-50">
-          <i class="bi bi-c-circle"></i> {{currentYear}} Ekenyoro
+          <i class="bi bi-c-circle"></i> {{currentYear()}} Ekenyoro
         </p>
       </li>
     </ul>
@@ -213,8 +210,8 @@
       <div class="d-flex align-items-center mb-3">
         <img src="https://github.com/mdo.png" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
         <div>
-          <p class="m-0"><span class="invisible">@</span>John Doe</p>
-          <p class="m-0 fw-bolder"><span class="fw-light">@</span>johndoe</p>
+          <p class="m-0"><span class="invisible">&#64;</span>John Doe</p>
+          <p class="m-0 fw-bolder"><span class="fw-light">&#64;</span>johndoe</p>
         </div>
       </div>
 
