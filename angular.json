@@ -26,6 +26,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": [
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
@@ -68,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ekenyoro-frontend:build:production"
+              "buildTarget": "ekenyoro-frontend:build:production"
             },
             "development": {
-              "browserTarget": "ekenyoro-frontend:build:development"
+              "buildTarget": "ekenyoro-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ekenyoro-frontend:build"
+            "buildTarget": "ekenyoro-frontend:build"
           }
         },
         "test": {
