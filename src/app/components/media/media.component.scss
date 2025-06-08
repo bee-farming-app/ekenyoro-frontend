@@ -1,0 +1,98 @@
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--bs-primary); // Optional: Use a theme color
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+h5 { // For video titles
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+section p, section ul {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+section ul {
+  padding-left: 1.5rem;
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.video-placeholder {
+  border: 1px dashed #ced4da; // Bootstrap's default border color
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+
+  p {
+    font-style: italic;
+    color: #6c757d; // Bootstrap's text-muted color
+    margin-bottom: 0.75rem;
+  }
+}
+
+// Responsive iframe styling
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: "";
+  }
+
+  &.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+  }
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+
+.newsletter-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.image-placeholder { // For gallery
+  height: 200px;
+  background-color: #e9ecef;
+  text-align: center;
+  line-height: 200px;
+  border: 1px dashed #ced4da;
+  color: #6c757d;
+  font-style: italic;
+}

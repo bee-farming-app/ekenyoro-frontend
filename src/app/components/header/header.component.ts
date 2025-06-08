@@ -2,10 +2,12 @@ import { Component, signal } from '@angular/core';
 
 // import { CommonModule } from '@angular/common'; // No longer needed after removing *ngIf
 
+import { RouterModule } from '@angular/router'; // Import RouterModule
+
 @Component({
   selector: 'ekenyoro-header',
   standalone: true,
-  imports: [], // CommonModule removed
+  imports: [RouterModule], // Add RouterModule here
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })

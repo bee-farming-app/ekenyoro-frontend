@@ -1,0 +1,18 @@
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--bs-primary); // Optional: Use a theme color for headings
+}
+
+section {
+  margin-bottom: 2rem;
+
+  p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+// Optional: Add a bit more spacing for the list of drivers for better readability
+#what-drives-us p {
+  margin-bottom: 0.75rem;
+}

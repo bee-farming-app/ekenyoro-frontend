@@ -21,4 +21,22 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display the current year', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const currentYear = new Date().getFullYear().toString();
+    expect(compiled.textContent).toContain(`© ${currentYear} Ekenyoro, Inc. All rights reserved.`);
+  });
+
+  it('should display the contact email', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    // Use the actual email value from the component's signal
+    expect(compiled.textContent).toContain(`Email: ${component.email()}`);
+  });
+
+  it('should display the contact phone number', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    // Use the actual phone number value from the component's signal
+    expect(compiled.textContent).toContain(`Phone: ${component.phoneNumber()}`);
+  });
 });

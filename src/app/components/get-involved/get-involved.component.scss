@@ -1,0 +1,45 @@
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--bs-primary); // Optional: Use a theme color
+}
+
+section {
+  margin-bottom: 2rem;
+
+  p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+.support-methods {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); // Subtle shadow for cards
+  }
+
+  .card-title {
+    color: var(--bs-secondary); // Optional: Use a theme color
+  }
+
+  .btn {
+    margin-top: 0.5rem; // Add some space above buttons if card text is short
+  }
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+#contact-for-involvement p {
+  font-size: 1.1rem;
+}

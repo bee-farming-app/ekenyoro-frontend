@@ -1,0 +1,66 @@
+h1 {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--bs-primary); // Optional: Use a theme color
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--bs-secondary); // Optional: Use a theme color
+}
+
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.project-details {
+  margin-bottom: 3rem;
+
+  p, ul {
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.image-placeholder {
+  height: 200px;
+  background-color: #e9ecef; // A light gray, similar to Bootstrap's default placeholder
+  text-align: center;
+  line-height: 200px;
+  border: 1px dashed #ced4da; // Bootstrap's default border color
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #6c757d; // Bootstrap's text-muted color
+  font-style: italic;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+// Specific styling for placeholders within columns if needed
+.row .image-placeholder {
+  height: 180px; // Slightly smaller for columns
+  line-height: 180px;
+}

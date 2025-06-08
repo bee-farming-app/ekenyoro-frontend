@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'ekenyoro-footer',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  currentYear = signal(new Date().getFullYear());
+  email = signal('info@ekenyoro.org'); // Placeholder updated
+  phoneNumber = signal('+254 7XX XXX XXX'); // Placeholder updated
 }

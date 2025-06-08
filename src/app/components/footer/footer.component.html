@@ -34,7 +34,17 @@
         </ul>
       </div>
 
-      <div class="col-md-4 offset-md-1 mb-3">
+      <div class="col-6 col-md-3 mb-3"> <!-- Adjusted column size to make space -->
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><p class="p-0 text-body-secondary">📍 Based in Western Kenya</p></li>
+          <li class="nav-item mb-2"><p class="p-0 text-body-secondary">📧 Email: {{ email() }}</p></li>
+          <li class="nav-item mb-2"><p class="p-0 text-body-secondary">📞 Phone: {{ phoneNumber() }}</p></li>
+          <li class="nav-item mb-2"><p class="p-0 text-body-secondary">🌐 Social Media: [Insert handles]</p></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 offset-md-1 mb-3"> <!-- This might need to be adjusted if it was the last one -->
         <h5>Blog</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Articles</a></li>
@@ -55,7 +65,7 @@
     </div>
 
     <div class="d-flex flex-column flex-sm-row justify-content-center py-4 border-top">
-      <p class="text-center my-auto">&copy; 2023 Ekenyoro, Inc. All rights reserved.</p>
+      <p class="text-center my-auto">&copy; {{ currentYear() }} Ekenyoro, Inc. All rights reserved.</p>
     </div>
   </footer>
 </div>
